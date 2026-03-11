@@ -1,0 +1,134 @@
+@define-color bg    #1a1b26;
+@define-color fg    #a9b1d6;
+@define-color blk   #32344a;
+@define-color red   #f7768e;
+@define-color grn   #9ece6a;
+@define-color ylw   #e0af68;
+@define-color blu   #7aa2f7;
+@define-color mag   #ad8ee6;
+@define-color cyn   #0db9d7;
+@define-color brblk #444b6a;
+@define-color white #ffffff;
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* ===== BAR ===== */
+
+window#waybar {
+    background-color: rgba(26,27,38,0.97);
+    color: @fg;
+    border-bottom: 1px solid rgba(169,177,214,0.08);
+}
+
+/* remove childish spacing */
+.modules-left,
+.modules-center,
+.modules-right {
+    margin: 0;
+    padding: 0 14px;
+}
+
+/* ===== WORKSPACES ===== */
+
+#workspaces {
+    margin-right: 18px;
+}
+
+#workspaces button {
+    padding: 0 14px;
+    color: rgba(169,177,214,0.45);
+    background: transparent;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button:hover {
+    color: @fg;
+}
+
+#workspaces button.active {
+    color: @white;
+    border-bottom: 2px solid @mag;
+}
+
+#workspaces button.empty {
+    color: rgba(169,177,214,0.2);
+}
+
+/* ===== MODULE BASE ===== */
+
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#disk,
+#network,
+#tray {
+    padding: 0 16px;
+    margin: 0;
+    background: transparent;
+}
+
+/* remove first separator */
+#clock {
+    border-left: none;
+}
+
+/* ===== COLOR AS TYPOGRAPHIC ACCENT ===== */
+
+#clock {
+    color: @white;
+    font-weight: 700;
+}
+
+#pulseaudio { color: @red; }
+#cpu        { color: @grn; }
+#memory     { color: @mag; }
+#disk       { color: @ylw; }
+#network    { color: @blu; }
+
+/* ===== DISCONNECTED STATE ===== */
+
+/* #network.disconnected {
+    color: rgba(247,118,142,0.4);
+} */
+
+/* ===== TRAY ===== */
+
+#tray {
+    padding-right: 8px;
+}
+
+#pulseaudio {
+    padding: 0 16px;
+    margin: 0;
+    background: transparent;
+    color: @red;
+}
+
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+  font-size: 14px;
+  padding: 0 10px;
+  min-width: 26px;
+}
+
+#custom-vpn {
+    padding: 0 16px;
+    color: @cyn;
+}
+
+#custom-vpn.connected {
+    color: @grn;
+}
+
+#custom-vpn.disconnected {
+    color: rgba(247,118,142,0.4);
+}

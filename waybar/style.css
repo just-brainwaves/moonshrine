@@ -1,0 +1,107 @@
+@import "theme.css";
+
+* {
+	all: initial;
+	/* Reset GTK theme */
+	color: @main-fg;
+}
+
+@import "styles/fonts.css";
+@import "styles/modules-center.css";
+@import "styles/modules-left.css";
+@import "styles/modules-right.css";
+@import "styles/states.css";
+
+.module {
+	margin-bottom: -1px;
+}
+
+#waybar {
+	background-color: @outline;
+}
+
+#waybar>box {
+	margin: 4px;
+	background-color: @main-bg;
+}
+
+button {
+	border-radius: 16px;
+	min-width: 16px;
+	padding: 0 10px;
+}
+
+button:hover {
+	background-color: @hover-bg;
+	color: @hover-fg;
+}
+
+tooltip {
+	border: 2px solid @main-br;
+	border-radius: 10px;
+	background-color: @main-bg;
+}
+
+tooltip>box {
+	padding: 0 6px;
+}
+
+
+#custom-notification {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+#custom-notification.dnd {
+	opacity: 0.6;
+}
+
+#custom-notification.notification {
+	color: @accent;
+}
+
+#tray {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#tray > .item {
+    border-radius: 16px;
+    padding: 0 6px;
+    margin: 0 2px;
+    background: transparent;
+}
+
+#tray > .item:hover {
+    background-color: @hover-bg;
+}
+
+#tray > .passive {
+    opacity: 0.7;
+}
+
+#tray > .needs-attention {
+    background-color: @accent;
+    color: @main-bg;
+}
+
+menu,
+menuitem {
+    background-color: @main-bg;
+    color: @main-fg;
+    border-radius: 8px;
+}
+
+menu {
+    border: 2px solid @main-br;
+    padding: 4px;
+}
+
+menuitem {
+    padding: 6px 12px;
+}
+
+menuitem:hover {
+    background-color: @hover-bg;
+    color: @hover-fg;
+}
