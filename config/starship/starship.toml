@@ -1,0 +1,102 @@
+# ╔══════════════════════════════════════════════╗
+# ║         M O O N S H R I N E                 ║
+# ║           starship.toml                      ║
+# ╚══════════════════════════════════════════════╝
+
+# ── Palette ──────────────────────────────────────
+palette = "moonshrine"
+
+[palettes.moonshrine]
+void       = "#08080d"
+abyss      = "#0c0c14"
+iron       = "#252535"
+steel      = "#303045"
+ashgray    = "#5e5e72"
+silver     = "#a8a8be"
+moonlight  = "#cecee0"
+bone       = "#eaeaf4"
+deerwhite  = "#f6f6fa"
+deepblood  = "#580010"
+bloodwine  = "#7a0820"
+crimson    = "#9e0e2e"
+scarlet    = "#c01638"
+roseblood  = "#de2448"
+blush      = "#f04068"
+moss       = "#1c3824"
+fern       = "#2e5c3c"
+sage       = "#408055"
+lichen     = "#5a9e6e"
+
+# ── Format ───────────────────────────────────────
+format = """
+$os$directory$git_branch$git_status$cmd_duration
+$character"""
+
+# ── OS icon ──────────────────────────────────────
+[os]
+disabled = false
+format = "[$symbol]($style) "
+style = "fg:ashgray"
+
+[os.symbols]
+Arch = ""
+
+# ── Directory ────────────────────────────────────
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold fg:moonlight"
+read_only = " 󰌾"
+read_only_style = "fg:roseblood"
+truncation_length = 3
+truncate_to_repo = true
+home_symbol = "~"
+
+# ── Git branch ───────────────────────────────────
+[git_branch]
+format = "[$symbol$branch]($style) "
+symbol = " "
+style = "fg:ashgray"
+
+# ── Git status ───────────────────────────────────
+[git_status]
+format = "([$all_status$ahead_behind]($style) )"
+style = "fg:roseblood"
+conflicted = "󰞇 "
+ahead = "⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕ "
+untracked = "? "
+stashed = "󰏗 "
+modified = "! "
+staged = "+ "
+deleted = "✘ "
+
+# ── Command duration ─────────────────────────────
+[cmd_duration]
+min_time = 2000
+format = "[ $duration]($style) "
+style = "fg:ashgray"
+
+# ── Character (prompt symbol) ────────────────────
+[character]
+success_symbol = "[❯](bold fg:scarlet)"
+error_symbol   = "[❯](bold fg:blush)"
+vimcmd_symbol  = "[❮](bold fg:sage)"
+
+# ── Languages (only show when relevant) ──────────
+[python]
+format = "[ $version]($style) "
+style = "fg:ashgray"
+
+[nodejs]
+format = "[ $version]($style) "
+style = "fg:ashgray"
+
+[rust]
+format = "[ $version]($style) "
+style = "fg:ashgray"
+
+[package]
+format = "[ $version]($style) "
+style = "fg:ashgray"
+disabled = true

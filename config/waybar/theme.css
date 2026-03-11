@@ -1,0 +1,70 @@
+/* ╔══════════════════════════════════════════════╗ */
+/* ║         M O O N S H R I N E                 ║ */
+/* ║      theme.css  —  GTK-safe palette          ║ */
+/* ╚══════════════════════════════════════════════╝ */
+
+/* ── Void Blacks ── */
+@define-color void          #050507;
+@define-color abyss         #08080d;
+@define-color midnight      #0c0c14;
+@define-color shadowstone   #111119;
+@define-color obsidian      #16161f;
+@define-color slate         #1d1d28;
+@define-color iron          #252535;
+@define-color steel         #303045;
+@define-color gunmetal      #424255;
+@define-color ashgray       #5e5e72;
+@define-color fog           #7c7c90;
+@define-color silver        #a8a8be;
+@define-color moonlight     #cecee0;
+@define-color bone          #eaeaf4;
+
+/* ── Crimson Berries ── */
+@define-color deepblood     #580010;
+@define-color bloodwine     #7a0820;
+@define-color crimson       #9e0e2e;
+@define-color scarlet       #c01638;
+@define-color roseblood     #de2448;
+@define-color blush         #f04068;
+
+/* ── Forest Greens ── */
+@define-color darkwood      #122018;
+@define-color moss          #1c3824;
+@define-color fern          #2e5c3c;
+@define-color sage          #408055;
+@define-color lichen        #5a9e6e;
+
+/* ── Moon Whites ── */
+@define-color deerwhite     #f6f6fa;
+@define-color moonhalo      #e0e0ee;
+
+/* ════ SEMANTIC MAPPINGS ════ */
+
+@define-color accent          @scarlet;
+@define-color accent-glow     @roseblood;
+@define-color accent-green    @sage;
+
+/* Main */
+@define-color main-br         @steel;
+@define-color main-bg         @abyss;
+@define-color main-fg         @moonlight;
+@define-color hover-bg        @shadowstone;
+@define-color hover-fg        @bone;
+@define-color outline         @void;
+
+/* Modules */
+@define-color workspaces      @void;
+@define-color temperature     @midnight;
+@define-color memory          @shadowstone;
+@define-color cpu             @obsidian;
+@define-color time            @slate;
+@define-color date            @shadowstone;
+@define-color tray            @midnight;
+@define-color volume          @midnight;
+@define-color backlight       @shadowstone;
+@define-color battery         @obsidian;
+
+/* States */
+@define-color warning         @roseblood;
+@define-color critical        @blush;
+@define-color charging        @sage;
