@@ -39,30 +39,31 @@
 @define-color moonhalo      #e0e0ee;
 
 /* ════ SEMANTIC MAPPINGS ════ */
-
 @define-color accent          @scarlet;
 @define-color accent-glow     @roseblood;
 @define-color accent-green    @sage;
 
-/* Main */
-@define-color main-br         @steel;
+/* Main — bar shell stays deep void */
+@define-color main-br         @gunmetal;
 @define-color main-bg         @abyss;
 @define-color main-fg         @moonlight;
-@define-color hover-bg        @shadowstone;
-@define-color hover-fg        @bone;
+@define-color hover-bg        @slate;
+@define-color hover-fg        @deerwhite;
 @define-color outline         @void;
 
-/* Modules */
-@define-color workspaces      @void;
-@define-color temperature     @midnight;
-@define-color memory          @shadowstone;
-@define-color cpu             @obsidian;
-@define-color time            @slate;
-@define-color date            @shadowstone;
-@define-color tray            @midnight;
-@define-color volume          @midnight;
-@define-color backlight       @shadowstone;
-@define-color battery         @obsidian;
+/* ── Module Backgrounds ──
+   Stepped from dark → lighter so every
+   module boundary is clearly visible     */
+@define-color workspaces      @midnight;
+@define-color temperature     @obsidian;
+@define-color memory          @slate;
+@define-color cpu             @iron;
+@define-color time            @steel;
+@define-color date            @iron;
+@define-color tray            @obsidian;
+@define-color volume          @slate;
+@define-color backlight       @iron;
+@define-color battery         @slate;
 
 /* States */
 @define-color warning         @roseblood;

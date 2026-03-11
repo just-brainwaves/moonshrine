@@ -100,3 +100,5 @@ style = "fg:ashgray"
 format = "[ $version]($style) "
 style = "fg:ashgray"
 disabled = true
+
+

@@ -1,0 +1,54 @@
+Actual - 
+
+sudo pacman -S hyprland \
+    xorg-xwayland \
+    rofi \
+    swww \
+    git \
+    kitty \
+    waybar \
+    thunar \
+    ristretto \
+    yazi \
+    swaync \
+    swayosd \
+    zsh \
+    ttf-jetbrains-mono-nerd \
+    starship \
+    lazygit \
+    nvim \
+    fzf \
+    nvim-treesitter-cli \
+    ripgrep \
+    fd \
+    brightnessctl \
+    unrar \
+    unzip \
+    7zip \
+    grim \
+    swappy \
+    slurp \
+    blueman \
+    aria2 \
+    wl-clipboard \
+    cliphist \
+    docker \
+    lazydocker \
+    otf-commit-mono-nerd \
+
+
+
+
+
+
+
+
+
+paru -S visual-studio-code-bin \
+    hyprlock \
+    hypridle \
+    graphite-gtk-theme \
+    papirus-icon-theme \
+    phinger-cursors \
+    
+    

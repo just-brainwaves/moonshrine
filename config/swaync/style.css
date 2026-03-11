@@ -1,140 +1,183 @@
-/* -----------------------------------
-   Catppuccin Mocha – Minimal
------------------------------------- */
+/* ╔══════════════════════════════════════════════╗ */
+/* ║         M O O N S H R I N E                 ║ */
+/* ║           swaync  style.css                  ║ */
+/* ╚══════════════════════════════════════════════╝ */
 
-@define-color background rgba(18, 17, 27, 0.92);
-@define-color foreground #cdd6f4;
-@define-color red #f38ba8;
-@define-color blue #89b4fa;
+/* ── Palette ── */
+@define-color void          rgba(8, 8, 13, 0.92);
+@define-color abyss         rgba(12, 12, 20, 0.95);
+@define-color midnight      #111119;
+@define-color iron          #252535;
+@define-color steel         #303045;
+@define-color ashgray       #5e5e72;
+@define-color silver        #a8a8be;
+@define-color moonlight     #cecee0;
+@define-color bone          #eaeaf4;
+@define-color deerwhite     #f6f6fa;
+@define-color crimson       #9e0e2e;
+@define-color scarlet       #c01638;
+@define-color roseblood     #de2448;
+@define-color blush         #f04068;
+@define-color sage          #408055;
+@define-color lichen        #5a9e6e;
 
-/* -----------------------------------
-   Global
------------------------------------- */
-
+/* ── Global ── */
 * {
-  font-family: "JetBrainsMono Nerd Font Propo";
-  font-size: 18px;
-  color: @foreground;
-  background-color: transparent;
-  border: none;
-  outline: none;
+    font-family:      "JetBrainsMono Nerd Font Propo";
+    font-size:        14px;
+    color:            @moonlight;
+    background-color: transparent;
+    border:           none;
+    outline:          none;
 }
 
-/* -----------------------------------
-   Control Center Window
------------------------------------- */
-
+/* ── Control Center Window ── */
 .control-center {
-  background-color: @background;
-  padding: 6px;
-  border-radius: 6px;
+    background-color: @void;
+    padding:          8px;
+    border-radius:    12px;
+    border:           1px solid @iron;
 }
 
-/* -----------------------------------
-   Title Bar
------------------------------------- */
-
+/* ── Title Bar ── */
 .widget-title {
-  padding: 10px;
-  font-weight: bold;
+    padding:     12px 14px 8px;
+    font-weight: bold;
 }
 
-.widget-title>label {
-  font-size: 1.3rem;
+.widget-title > label {
+    font-size: 1.1rem;
+    color:     @bone;
 }
 
-.widget-title>button {
-  background: @red;
-  border-radius: 100px;
-  padding: 0 6px;
+/* Clear all button — glowing white */
+.widget-title > button {
+    background:    alpha(@deerwhite, 0.12);
+    border-radius: 100px;
+    padding:       2px 10px;
+    color:         @deerwhite;
+    border:        1px solid alpha(@deerwhite, 0.25);
+    /* GTK-safe glow via border */
 }
 
-.widget-title>button:hover {
-  background: alpha(@red, 0.8);
+.widget-title > button:hover {
+    background: alpha(@deerwhite, 0.22);
+    border:     1px solid alpha(@deerwhite, 0.55);
+    color:      @deerwhite;
 }
 
-/* -----------------------------------
-   Notifications
------------------------------------- */
-
+/* ── Notification Row ── */
 .notification-row .notification-background {
-  border-radius: 6px;
-  margin: 4px 0 10px;
+    border-radius: 10px;
+    margin:        4px 0 8px;
 }
 
 .notification {
-  background-color: alpha(@background, 0.95);
-  border-left: 6px solid @blue;
-  border-radius: 6px;
-  padding: 8px 12px;
-  margin-bottom: 6px;
-  min-height: 48px;
+    background-color: @abyss;
+    border-left:      3px solid @scarlet;
+    border-radius:    10px;
+    padding:          10px 14px;
+    margin-bottom:    6px;
+    min-height:       48px;
 }
 
-/* text */
+.notification:hover {
+    background-color: alpha(@midnight, 0.98);
+    border-left:      3px solid @roseblood;
+}
 
+/* Text */
 .notification .summary {
-  font-weight: 600;
+    font-weight: 600;
+    font-size:   0.95rem;
+    color:       @bone;
 }
 
 .notification .body {
-  color: @foreground;
+    color:     @silver;
+    font-size: 0.88rem;
 }
 
 .notification .time {
-  font-size: 0.8rem;
-  color: alpha(@foreground, 0.6);
+    font-size: 0.78rem;
+    color:     @ashgray;
 }
 
-/* critical notifications */
-
+/* Critical — deep blood red */
 .notification.critical {
-  background: @red;
-  border-left: 6px solid @red;
+    background:  rgba(88, 0, 16, 0.85);
+    border-left: 3px solid @blush;
 }
 
 .notification.critical .summary,
 .notification.critical .body {
-  color: #11111b;
-  font-weight: bold;
+    color:       @deerwhite;
+    font-weight: bold;
 }
 
-/* -----------------------------------
-   Images / Icons
------------------------------------- */
+/* Low priority — dimmed */
+.notification.low {
+    border-left: 3px solid @iron;
+    opacity:     0.75;
+}
 
+/* ── Images / Icons ── */
 .image {
-  margin-right: 10px;
-  min-width: 36px;
-  min-height: 36px;
+    margin-right: 10px;
+    min-width:    36px;
+    min-height:   36px;
+    border-radius: 6px;
 }
 
-/* -----------------------------------
-   Close Button
------------------------------------- */
-
+/* ── Close Button — glowing white ── */
 .close-button {
-  background-color: @red;
-  border-radius: 10px;
+    background-color: alpha(@deerwhite, 0.10);
+    border-radius:    8px;
+    color:            @deerwhite;
+    border:           1px solid alpha(@deerwhite, 0.20);
+    padding:          0 6px;
+    min-width:        24px;
+    min-height:       24px;
 }
 
 .close-button:hover {
-  background-color: alpha(@red, 0.8);
+    background-color: alpha(@deerwhite, 0.22);
+    border:           1px solid alpha(@deerwhite, 0.55);
+    color:            @deerwhite;
 }
 
-/* -----------------------------------
-   Hide Scrollbars
------------------------------------- */
+/* ── Action Buttons ── */
+.notification-action {
+    background-color: alpha(@midnight, 0.8);
+    border-radius:    8px;
+    color:            @silver;
+    border:           1px solid @iron;
+    padding:          4px 12px;
+    margin:           4px 4px 0;
+}
 
+.notification-action:hover {
+    background-color: alpha(@scarlet, 0.20);
+    border:           1px solid @scarlet;
+    color:            @bone;
+}
+
+/* ── Empty State ── */
+.empty-state-icon,
+.blank-window {
+    color: @ashgray;
+}
+
+/* ── Scrollbars — hidden ── */
 scrollbar,
 scrollbar slider,
 scrollbar button {
-  min-width: 0;
-  min-height: 0;
-  background: transparent;
-  border: none;
+    min-width:  0;
+    min-height: 0;
+    background: transparent;
+    border:     none;
 }
 
 scrollbar trough {
-  background: transparent;
+    background: transparent;
 }
