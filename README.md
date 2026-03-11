@@ -1,0 +1,2 @@
+# braindots
+My Hyprland Config
