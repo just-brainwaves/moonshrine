@@ -1,13 +1,13 @@
 <div align="center">
 
-```
-███╗   ███╗ ██████╗  ██████╗ ███╗   ██╗███████╗██╗  ██╗██████╗ ██╗███╗   ██╗███████╗
-████╗ ████║██╔═══██╗██╔═══██╗████╗  ██║██╔════╝██║  ██║██╔══██╗██║████╗  ██║██╔════╝
-██╔████╔██║██║   ██║██║   ██║██╔██╗ ██║███████╗███████║██████╔╝██║██╔██╗ ██║█████╗  
-██║╚██╔╝██║██║   ██║██║   ██║██║╚██╗██║╚════██║██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝  
-██║ ╚═╝ ██║╚██████╔╝╚██████╔╝██║ ╚████║███████║██║  ██║██║  ██║██║██║ ╚████║███████╗
-╚═╝     ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝
-```
+        ```
+        ███╗   ███╗ ██████╗  ██████╗ ███╗   ██╗███████╗██╗  ██╗██████╗ ██╗███╗   ██╗███████╗
+        ████╗ ████║██╔═══██╗██╔═══██╗████╗  ██║██╔════╝██║  ██║██╔══██╗██║████╗  ██║██╔════╝
+        ██╔████╔██║██║   ██║██║   ██║██╔██╗ ██║███████╗███████║██████╔╝██║██╔██╗ ██║█████╗  
+        ██║╚██╔╝██║██║   ██║██║   ██║██║╚██╗██║╚════██║██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝  
+        ██║ ╚═╝ ██║╚██████╔╝╚██████╔╝██║ ╚████║███████║██║  ██║██║  ██║██║██║ ╚████║███████╗
+        ╚═╝     ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝
+        ```
 
 *void black · crimson berries · moonlight white*
 
@@ -39,6 +39,9 @@
 
 </div>
 
+### Beautiful Wallpaper Transitions
+![BeautifullWallpaperTransitions](assets/BeautifullWallpaperTransitions.gif)
+
 ### Application Launcher & Workspaces
 ![ApplicationLauncherAndWorkspaces](assets/ApplicationLauncherAndWorkspaces.gif)
 
@@ -48,8 +51,6 @@
 ### Scratchpad
 ![Scratchpad](assets/Scratchpad.gif)
 
-### Beautiful Wallpaper Transitions
-![BeautifullWallpaperTransitions](assets/BeautifullWallpaperTransitions.gif)
 
 <!-- Drop new screenshots/gifs here as you add them -->
 
@@ -222,15 +223,17 @@ hyprctl reload
 
 ## 🎨 Credits
 
-- Waybar config structure — inspired by various unixporn configs
+- Waybar - https://github.com/sejjy/mechabar - Themed By ME
 - FastCat ascii — [m3tozz/FastCat](https://github.com/m3tozz/FastCat)
 - Neovim theme — [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
+- Wallpapers Are All AI Generated Except For The Deer Moon Wallpaper.
+
 
 ---
 
 <div align="center">
 
-*made with obsession on CachyOS*
+*made with obsession on Arch With CachyOS*
 
 **[r/unixporn](https://reddit.com/r/unixporn)** · **[hyprland](https://hyprland.org)**
 
