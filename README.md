@@ -105,9 +105,7 @@
 | Window Switcher | hyprswitch |
 
 ---
-
 ## 📁 File Structure
-
 ```
 ~/.config/
 ├── hypr/
@@ -117,33 +115,48 @@
 │   ├── keybindings.conf     # all keybinds
 │   ├── windowrules.conf     # per-app rules
 │   ├── hypridle.conf        # idle timeouts
-│   └── hyprlock.conf        # lock screen
+│   ├── hyprlock.conf        # lock screen
+│   ├── nvidia.conf          # nvidia tweaks
+│   └── Scripts/
+│       ├── cycle_wallpapers.sh
+│       ├── songdetail.sh
+│       ├── toggle_waybar.sh
+│       └── vpn_status.sh
 ├── waybar/
-│   ├── config.jsonc         # modules
+│   ├── config.jsonc         # main config
 │   ├── style.css            # GTK-safe styles
-│   └── theme.css            # Moonshrine color variables
+│   ├── theme.css            # Moonshrine color variables
+│   ├── styles/
+│   │   ├── fonts.css
+│   │   ├── modules-center.css
+│   │   ├── modules-left.css
+│   │   ├── modules-right.css
+│   │   └── states.css
+│   ├── modules/             # per-module configs
+│   │   ├── hyprland/        # workspaces, window, language
+│   │   ├── custom/          # distro, power, updates, user
+│   │   └── extras/          # tray, taskbar, wireplumber
+│   └── scripts/             # backlight, bluetooth, network, volume...
 ├── rofi/
-│   ├── config.rasi          # rofi configuration
+│   ├── config.rasi
 │   └── theme.rasi           # Moonshrine theme
 ├── swaync/
-│   ├── config.json          # notification config
+│   ├── config.json
 │   └── style.css            # Moonshrine notifications
 ├── kitty/
-│   └── kitty.conf           # terminal + Moonshrine colors
+│   ├── kitty.conf           # terminal + Moonshrine colors
+│   └── quick-access-terminal.conf
 ├── starship/
 │   └── starship.toml        # prompt — crimson ❯
 ├── fastfetch/
-│   ├── config.jsonc         # system info
+│   ├── config.jsonc
 │   └── ascii.txt            # custom ascii art
-├── kwybars/
-│   ├── config.toml          # audio visualizer
-│   └── themes/
-│       └── moonshrine.toml  # custom color theme
-└── nvim/
-    └── lua/plugins/
-        └── colorscheme.lua  # kanagawa-dragon + overrides
+├── nvim/
+│   └── lua/plugins/
+│       └── colorscheme.lua  # kanagawa-dragon + overrides
+└── btop/
+    └── btop.conf
 ```
-
 ---
 
 ## ⚡ Installation
