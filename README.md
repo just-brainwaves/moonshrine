@@ -233,6 +233,8 @@ hyprctl reload
 
 <div align="center">
 
+*Copyright (c) 2026 Aditya Shrimali*
+
 *made with obsession on Arch With CachyOS*
 
 **[r/unixporn](https://reddit.com/r/unixporn)** · **[hyprland](https://hyprland.org)**
