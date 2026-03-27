@@ -35,7 +35,7 @@ sudo pacman -S hyprland \
     docker \
     lazydocker \
     otf-commit-mono-nerd \
-
+    wf-recorder \
 
 
 

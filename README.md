@@ -29,6 +29,32 @@
 
 ---
 
+## 📸 Showcase
+
+<div align="center">
+
+| Desktop | Apps |
+|---|---|
+| ![Desktop](assets/desktop.png) | ![Apps](assets/apps.png) |
+
+</div>
+
+### Application Launcher & Workspaces
+![ApplicationLauncherAndWorkspaces](assets/ApplicationLauncherAndWorkspaces.gif)
+
+### Tiling Apps
+![TilingApps](assets/TilingApps.gif)
+
+### Scratchpad
+![Scratchpad](assets/Scratchpad.gif)
+
+### Beautiful Wallpaper Transitions
+![BeautifullWallpaperTransitions](assets/BeautifullWallpaperTransitions.gif)
+
+<!-- Drop new screenshots/gifs here as you add them -->
+
+---
+
 ## 🌑 Palette
 
 | Name | Hex | Usage |
