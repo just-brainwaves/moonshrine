@@ -173,13 +173,7 @@ cd moonshrine-dots
 ### 2. Install dependencies
 
 ```bash
-paru -S hyprland waybar rofi-wayland kitty zsh starship \
-        swww hyprlock hypridle hyprswitch hyprpicker \
-        swaync sddm sddm-astronaut-theme kwybars-bin \
-        zsh-autosuggestions zsh-syntax-highlighting \
-        grim slurp swappy cliphist wl-copy \
-        papirus-icon-theme phinger-cursors graphite-gtk-theme-black-rimless-normal-git \
-        otf-commit-mono-nerd ttf-jetbrains-mono-nerd fastfetch
+Everything From Req.txt
 ```
 
 ### 3. Copy configs
